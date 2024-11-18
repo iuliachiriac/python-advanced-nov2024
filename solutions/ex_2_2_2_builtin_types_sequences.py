@@ -4,7 +4,7 @@
 
 tuples = []
 for i in range(3, 20, 2):
-    tup = (i, i**2, i**3)
+    tup = (i, i ** 2, i ** 3)
     tuples.append(tup)
 
 print(tuples)
