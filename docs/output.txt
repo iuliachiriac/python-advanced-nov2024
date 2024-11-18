@@ -1,0 +1,19 @@
+total 824
+-rw-r--r--  1 iulia  staff   3609 Jun 17 08:28 01. Introduction.ipynb
+-rw-r--r--  1 iulia  staff  61194 Jun 17 14:12 02. Built-in Types.ipynb
+-rw-r--r--  1 iulia  staff  23467 Jun 17 16:58 03. Control Flow.ipynb
+-rw-r--r--  1 iulia  staff  61260 Jun 18 15:35 04. More on functions and iterables.ipynb
+-rw-r--r--  1 iulia  staff  36848 Jun 19 09:32 05. Advanced Data Structures.ipynb
+-rw-r--r--@ 1 iulia  staff  15299 Jun 17 08:28 06. Decorators.ipynb
+-rw-r--r--@ 1 iulia  staff  31743 Jun 17 08:28 07. Object-Oriented Programming.ipynb
+-rw-r--r--  1 iulia  staff  10936 Jun 17 08:28 08. Context Managers.ipynb
+-rw-r--r--  1 iulia  staff  65142 Jun 17 08:28 09. Testing your code.ipynb
+-rw-r--r--  1 iulia  staff  17026 Jun 17 08:28 10. Logging.ipynb
+-rw-r--r--@ 1 iulia  staff  26354 Jun 19 19:29 11. Concurrent execution.ipynb
+-rw-r--r--  1 iulia  staff  13159 Jun 19 19:36 12. Communicating with external processes.ipynb
+-rw-r--r--  1 iulia  staff  12150 Jun 17 08:28 books.csv
+-rw-r--r--@ 1 iulia  staff     11 Jun 17 08:28 example.txt
+-rw-r--r--@ 1 iulia  staff  15222 Jun 17 08:28 multithreading.png
+-rw-r--r--  1 iulia  staff      0 Jun 19 19:37 output.txt
+-rw-r--r--  1 iulia  staff    899 Jun 17 08:28 process_files.py
+-rw-r--r--  1 iulia  staff    593 Jun 17 08:28 users.json
