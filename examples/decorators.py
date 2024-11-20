@@ -1,4 +1,8 @@
+from functools import wraps
+
+
 def make_pretty(func):
+    @wraps(func)
     def inner(*args, **kwargs):
         print(f"I am {func.__name__} and I got decorated")
         output = func(*args, **kwargs)
@@ -20,6 +24,7 @@ def greet(name):
 
 @make_pretty
 def compute(a, b, c=0):
+    """Function that does a computation of three numbers"""
     return a * b + c
 
 
@@ -30,3 +35,5 @@ greet(name="John")
 
 result = compute(20, 4, 4)
 print("computation result:", result)
+
+print(compute, compute.__name__, compute.__doc__)
