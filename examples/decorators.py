@@ -11,10 +11,24 @@ def make_pretty(func):
     return inner
 
 
+def repeat(num_times):
+    def decorator_repeat(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            output = None
+            for _ in range(num_times):
+                output = func(*args, **kwargs)
+            return output
+        return wrapper
+    return decorator_repeat
+
+
+@repeat(3)
 @make_pretty
 def ordinary():
     print("I am ordinary")
 # ordinary = make_pretty(ordinary)  # ordinary = make_pretty.<locals>.inner
+# ordinary = repeat(3)(ordinary) ~ decorator_repeat(ordinary)
 
 
 @make_pretty
@@ -36,4 +50,5 @@ greet(name="John")
 result = compute(20, 4, 4)
 print("computation result:", result)
 
+print(ordinary, ordinary.__name__)
 print(compute, compute.__name__, compute.__doc__)
