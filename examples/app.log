@@ -1,8 +1,0 @@
-2024-11-21 16:13:45,405 - custom_logger - INFO - Info message
-2024-11-21 16:13:45,405 - custom_logger - WARNING - Warning message
-2024-11-21 16:13:45,405 - custom_logger - ERROR - Error message
-2024-11-21 16:13:45,405 - custom_logger - CRITICAL - Critical message
-2024-11-21 16:14:55,192:custom_logger:INFO - Info message
-2024-11-21 16:14:55,192:custom_logger:WARNING - Warning message
-2024-11-21 16:14:55,192:custom_logger:ERROR - Error message
-2024-11-21 16:14:55,192:custom_logger:CRITICAL - Critical message

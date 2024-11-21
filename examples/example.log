@@ -1,7 +1,0 @@
-2024-11-21 16:31:03,231 ERROR Error for ../.venv/lib/python3.13/site-packages/IPython/core/tests/nonascii.py
-Traceback (most recent call last):
-  File "/Users/iulia/PycharmProjects/python-advanced-nov2024/examples/logging_test.py", line 15, in search_term
-    for line in f:
-                ^
-  File "<frozen codecs>", line 325, in decode
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb1 in position 81: invalid start byte
