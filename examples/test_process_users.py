@@ -2,7 +2,7 @@ import json
 import os
 import unittest
 
-from process_users import get_users
+from process_users import get_name_age, get_users
 
 
 class GetUsersTestCase(unittest.TestCase):
@@ -45,3 +45,32 @@ class GetUsersTestCase(unittest.TestCase):
         self.assertIsInstance(users, list)
         self.assertEqual(len(users), 1)
         self.assertListEqual(users, self.users_expected[1:2])
+
+    def test_invalid_json(self):
+        filename = "file.txt"
+        with open(filename, "w"):
+            pass
+
+        with self.assertRaises(json.decoder.JSONDecodeError):
+            get_users(filename)
+
+        os.remove(filename)
+
+
+class GetNameAgeTestCase(unittest.TestCase):
+    def test_name(self):
+        inputs = [{
+            "name": "John Doe",
+            "age": 20,
+        }, {
+            "first_name": "Anna",
+            "last_name": "Smith",
+            "age": 35,
+        }]
+        outputs = [("John Doe", 20), ("Anna Smith", 35)]
+
+        for user, (name_exp, age_exp) in zip(inputs, outputs):
+            with self.subTest(f"Failed for user={user}"):
+                name, age = get_name_age(user)
+                self.assertEqual(name, name_exp)
+                self.assertEqual(age, age_exp)
